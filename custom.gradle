@@ -1,0 +1,52 @@
+ext {
+    android = [
+            compileSdkVersion : 30,
+            buildToolsVersion : "30.0.3",
+            minSdkVersion : 19,
+            targetSdkVersion : 30
+    ]
+
+    dependencies = [
+            "appcompat" : "androidx.appcompat:appcompat:1.2.0",
+            "material" : "com.google.android.material:material:1.4.0",
+            "constraintlayout" : "androidx.constraintlayout:constraintlayout:2.1.3",
+
+            // kotlin
+            "kotlin-core-ktx" : "androidx.core:core-ktx:1.5.0",
+            "kotlin-stdlib" : "org.jetbrains.kotlin:kotlin-stdlib:1.5.0",
+            "kotlinx-coroutines-core" : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0",
+            "kotlinx-coroutines-android" : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0",
+
+            // Lifecycle
+            "lifecycle-extensions" : "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            // Lifecycles only (without ViewModel or LiveData)
+            "lifecycle-runtime-ktx" : "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0",
+            // viewModel
+            "lifecycle-viewmodel-ktx" : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0",
+            // LiveData库
+            "lifecycle-livedata-ktx" : "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0",
+            // Saved state module for ViewModel
+            "lifecycle-viewmodel-savedstate" : "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0",
+            // Annotation processor
+            // kapt rootProject.ext.dependencies["lifecycle-compiler"]
+            "lifecycle-compiler" : "androidx.lifecycle:lifecycle-compiler:2.2.0",
+            // alternately - if using Java8, use the following instead of lifecycle-compiler
+            "lifecycle-common-java8" : "androidx.lifecycle:lifecycle-common-java8:2.2.0",
+            // optional - ReactiveStreams support for LiveData
+            "lifecycle-reactivestreams-ktx" : "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.2.0",
+
+            // retrofit
+            "retrofit" : "com.squareup.retrofit2:retrofit:2.9.0",
+            "retrofit-mock" : "com.squareup.retrofit2:retrofit-mock:2.9.0",
+            "retrofit-converter-gson" : "com.squareup.retrofit2:converter-gson:2.9.0",
+            "retrofit-converter-scalars" : "com.squareup.retrofit2:converter-scalars:2.9.0",
+            "retrofit-adapter-rxjava2" : "com.squareup.retrofit2:adapter-rxjava2:2.9.0",
+
+            // Gson
+            "gson" : "com.google.code.gson:gson:2.8.6",
+
+            // Okhttp
+            "okhttp" : "com.squareup.okhttp3:okhttp:5.0.0-alpha.2",
+            "okhttp-logging-interceptor" : "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2",
+    ]
+}
